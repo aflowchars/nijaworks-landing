@@ -20,9 +20,9 @@ module.exports = {
           xs: "1.5rem",
           sm: "1.75rem",
           md: "2rem",
-          lg: "2.25rem",
-          xl: "2.5rem",
-          "2xl": "2.75rem",
+          lg: "3rem",
+          xl: "4rem",
+          "2xl": "4.5rem",
         },
       },
 

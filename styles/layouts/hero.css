@@ -15,7 +15,7 @@
     }
 
     &--text {
-      @apply text-7xl sm:text-8xl lg:text-[6rem] xl:text-[7.85rem] 2xl:text-[9.375rem] 
+      @apply text-7xl sm:text-8xl lg:text-[6rem] xl:text-[7.5rem] 2xl:text-[9.375rem] 
       
       leading-[1.1] sm:leading-[1.2] lg:leading-[1.175] xl:leading-[1.2];
     }
@@ -46,18 +46,18 @@
   }
 
   &__cta {
-    @apply block w-max h-max absolute left-1/2 xl:right-0 -translate-x-1/2 xl:translate-x-1/2 z-0 bg-dark-primary rounded-t-2xl -rotate-[15deg]
+    @apply block w-max h-max absolute left-1/2 xl:right-0 -translate-x-1/2 xl:translate-x-1/2 z-0 bg-dark-ternary rounded-t-2xl -rotate-[15deg]
       
       -bottom-10 sm:-bottom-12 xl:-bottom-14 2xl:-bottom-16
 
       p-3.5 xl:p-5
       
-      before:absolute before:w-full before:h-24 before:bg-dark-primary before:-bottom-1/2 before:left-0 before:-z-10;
+      before:absolute before:w-full before:h-24 before:bg-dark-ternary before:-bottom-1/2 before:left-0 before:-z-10;
 
     &--button {
-      @apply bg-brand-purple text-white px-8 py-9 xl:py-14 xl:px-9 
+      @apply bg-brand-purple text-white px-8 2xl:px-9 py-9 xl:py-12 2xl:py-14 
       
-      text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl
+      text-xl lg:text-2xl 2xl:text-4xl
       
       rounded-2xl;
     }

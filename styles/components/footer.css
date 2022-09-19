@@ -42,11 +42,11 @@
     @apply flex flex-col items-center xl:items-start;
 
     &--heading {
-      @apply text-center mb-5 text-2xl text-white/70;
+      @apply text-center mb-5 text-xl 2xl:text-2xl text-white/70;
     }
 
     &--link {
-      @apply text-2xl xl:text-3xl;
+      @apply text-2xl 2xl:text-3xl;
     }
 
     &--maps {
