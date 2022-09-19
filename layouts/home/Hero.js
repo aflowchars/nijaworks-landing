@@ -34,9 +34,9 @@ function Hero() {
         </div>
       </div>
       <div className="hero__cta">
-        <div className="hero__cta--left">
+        {/* <div className="hero__cta--left">
           <div className="hero__cta--round"></div>
-        </div>
+        </div> */}
         <button className="hero__cta--button">Collaborate With Us</button>
         {/* <div className="hero__cta--right"></div> */}
       </div>
