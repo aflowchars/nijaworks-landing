@@ -1,0 +1,15 @@
+.client {
+  @apply mb-8 xl:mb-12 bg-dark-ternary border-b border-dark-secondary;
+
+  &__wrapper {
+    @apply pb-12 pt-24 lg:pt-32 xl:pt-36 2xl:pt-40 xl:pb-24 2xl:pb-28 container grid grid-cols-12 gap-y-8 gap-x-5 content-center;
+  }
+
+  &__logo {
+    @apply w-32 h-10 sm:w-40 sm:h-12 xl:h-11 xl:w-40 2xl:h-14 2xl:w-48 relative place-self-center col-span-6 lg:col-span-3 xl:col-span-2;
+
+    &--icon {
+      @apply w-full h-full object-contain;
+    }
+  }
+}

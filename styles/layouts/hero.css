@@ -1,0 +1,86 @@
+.hero {
+  @apply bg-light-primary text-dark-primary rounded-b-2xl xl:rounded-b-3xl
+  
+  min-h-screen bg-[url('/background/overlay-hero.svg')] bg-cover bg-top bg-no-repeat relative;
+
+  &__container {
+    @apply container flex flex-col justify-center lg:grid lg:grid-cols-12 lg:gap-x-5 lg:place-content-center min-h-screen;
+  }
+
+  &__heading {
+    @apply mb-6 sm:mb-8 xl:mb-0 flex flex-col items-start h-full lg:col-span-7;
+
+    &--tag {
+      @apply mb-5 py-2 px-4 border border-dark-primary rounded-full xl:text-lg 2xl:text-xl;
+    }
+
+    &--text {
+      @apply text-7xl sm:text-8xl lg:text-[6rem] xl:text-[7.85rem] 2xl:text-[9.375rem] 
+      
+      leading-[1.1] sm:leading-[1.2] lg:leading-[1.175] xl:leading-[1.2];
+    }
+
+    &--image {
+      @apply flex flex-row items-center space-x-4 xl:space-x-6 align-bottom;
+    }
+
+    &--illustration {
+      @apply relative h-16 w-36 sm:w-60 sm:h-24 lg:h-24 lg:w-60 xl:w-64 2xl:w-[310px] xl:h-28 2xl:h-32;
+    }
+
+    &--photo {
+      @apply h-full w-full object-cover object-top rounded-md;
+    }
+  }
+
+  &__desc {
+    @apply text-dark-primary/70 relative h-full w-full lg:col-span-5;
+
+    &--text {
+      @apply lg:mt-28 2xl:mt-32 leading-loose text-base 2xl:text-xl lg:leading-loose xl:leading-loose 2xl:leading-loose;
+    }
+
+    &--bold {
+      @apply text-dark-primary/100 font-semibold;
+    }
+  }
+
+  &__cta {
+    @apply block w-max h-max absolute left-1/2 xl:right-0 -translate-x-1/2 xl:translate-x-1/2 z-0 bg-dark-primary rounded-t-2xl -rotate-[15deg]
+      
+      -bottom-10 sm:-bottom-12 xl:-bottom-14 2xl:-bottom-16
+
+      p-3.5 xl:p-5
+      
+      before:absolute before:w-full before:h-24 before:bg-dark-primary before:-bottom-1/2 before:left-0 before:-z-10;
+
+    &--button {
+      @apply bg-brand-purple text-white px-8 py-9 xl:py-14 xl:px-9 
+      
+      text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl
+      
+      rounded-2xl;
+    }
+
+    &--left {
+      @apply bg-blue-500 h-24 w-24 absolute inset-0 z-50 top-0 -left-24;
+    }
+
+    &--round {
+      @apply rounded-br-full bg-green-400 relative w-full h-1/2;
+    }
+
+    &--right {
+      @apply right-10 bg-red-500 h-8 w-8 absolute inset-0 z-50;
+    }
+  }
+}
+/* &--overlay {
+  @apply absolute -bottom-[20rem] sm:-bottom-72 md:-bottom-72 lg:-bottom-72 xl:-bottom-10 left-1/2 -translate-x-1/2 xl:right-0 w-max h-max bg-dark-ternary rounded-2xl p-3.5 xl:p-5 -rotate-[15deg]
+  
+  before:absolute before:-bottom-28 before:sm:-bottom-20 before:right-0 before:bg-dark-ternary before:w-full before:h-32 before:sm:h-24;
+}
+
+&--button {
+  @apply bg-brand-purple text-white px-8 py-9 xl:py-14 xl:px-9 text-xl lg:text-2xl rounded-2xl xl:text-3xl 2xl:text-4xl;
+} */

@@ -1,0 +1,61 @@
+.header {
+  @apply py-6 xl:py-8 bg-light-primary/10 fixed w-full min-h-[4rem] top-0 left-0 z-10
+  
+  transition-all ease-out duration-300;
+
+  &__white {
+    @apply bg-light-primary/95 shadow-md;
+  }
+
+  &__container {
+    @apply container flex items-center justify-between relative;
+  }
+
+  &__brand {
+    @apply h-6 w-auto;
+  }
+
+  &__menu {
+    @apply w-7 h-7 block lg:hidden;
+  }
+
+  &__close {
+    @apply w-7 h-7 block lg:hidden;
+  }
+
+  &__list {
+    @apply hidden lg:block space-x-8;
+  }
+
+  &__contact {
+    @apply hidden lg:block text-brand-purple font-semibold;
+  }
+
+  &__burger {
+    @apply block lg:hidden fixed top-0 h-screen w-full bg-dark-primary;
+
+    &--container {
+      @apply container mx-auto;
+    }
+
+    &--top {
+      @apply flex items-center justify-between py-6;
+    }
+
+    &--list {
+      @apply flex flex-col items-center text-3xl font-semibold space-y-6 py-10 border-b border-dark-secondary text-light-primary;
+    }
+
+    &--cta {
+      @apply w-full text-center py-10;
+    }
+
+    &--button {
+      @apply bg-brand-purple w-full rounded-full text-white py-5 text-lg font-semibold;
+    }
+  }
+
+  &__hidden {
+    @apply hidden;
+  }
+}

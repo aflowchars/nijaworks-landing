@@ -1,0 +1,6 @@
+body {
+  @apply font-manrope bg-dark-primary;
+}
+.nijaworks {
+  @apply bg-dark-primary h-full text-white min-h-screen relative font-medium;
+}

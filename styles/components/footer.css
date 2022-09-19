@@ -1,0 +1,84 @@
+.footer {
+  @apply bg-dark-primary text-white;
+
+  &__large {
+    @apply container xl:grid xl:grid-cols-12 xl:gap-x-5;
+  }
+
+  &__brand {
+    @apply pt-16 flex xl:flex-col items-center justify-center xl:col-span-4 xl:items-start xl:justify-start;
+
+    &--logo {
+      @apply w-72 xl:pb-8;
+    }
+
+    &--maps {
+      @apply text-lg xl:text-xl xl:text-left text-white/70 rounded-2xl hidden xl:block;
+    }
+  }
+
+  &__navigation {
+    @apply container py-16 space-y-10 xl:space-y-0 xl:col-span-8 xl:grid xl:grid-cols-8 xl:gap-x-5;
+  }
+
+  &__menu--wrapper {
+    @apply space-y-4 flex flex-col justify-center items-center text-center xl:items-start;
+  }
+
+  &__social--wrapper {
+    @apply text-center xl:text-left grid grid-cols-2 xl:grid-cols-1 gap-x-5 gap-y-4;
+  }
+
+  &__menu {
+    @apply col-span-6 xl:justify-self-center;
+  }
+
+  &__social {
+    @apply col-span-2 xl:justify-self-end;
+  }
+
+  &__menu,
+  &__social {
+    @apply flex flex-col items-center xl:items-start;
+
+    &--heading {
+      @apply text-center mb-5 text-2xl text-white/70;
+    }
+
+    &--link {
+      @apply text-2xl xl:text-3xl;
+    }
+
+    &--maps {
+      @apply text-lg xl:text-xl xl:text-left text-white/70 p-4 border border-white/5 rounded-2xl block xl:hidden;
+    }
+  }
+
+  &__cta {
+    @apply py-8 xl:py-16 border-t border-dark-secondary w-full;
+
+    &--container {
+      @apply container;
+    }
+
+    &--heading {
+      @apply text-left text-xl xl:text-3xl 2xl:text-4xl pb-4;
+    }
+
+    &--grid {
+      @apply w-full grid grid-cols-12 gap-x-5 items-center;
+    }
+
+    &--button {
+      @apply text-white/70 text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl col-span-9 lg:col-span-10 text-left leading-snug;
+    }
+
+    &--icon {
+      @apply stroke-white col-span-3 md:w-8/12 lg:col-span-2 w-max lg:w-full xl:w-8/12 h-fit justify-self-end;
+    }
+  }
+
+  &__copyright {
+    @apply w-full text-center text-sm xl:text-base py-4 xl:py-6 border-t border-dark-secondary;
+  }
+}

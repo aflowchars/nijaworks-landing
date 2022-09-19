@@ -1,0 +1,41 @@
+.service {
+  @apply container py-8 xl:py-20;
+
+  &__tag {
+    @apply mb-5 py-2 px-4 border border-white rounded-full max-w-fit xl:text-lg 2xl:text-xl;
+  }
+
+  &__heading {
+    @apply text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl xl:w-5/12 mb-5 md:mb-8 xl:mb-12 
+    
+    leading-relaxed xl:leading-relaxed 2xl:leading-relaxed;
+  }
+
+  &__card {
+    @apply grid grid-cols-12 gap-y-5 md:gap-x-5;
+
+    &--illustration {
+      @apply w-28 xl:w-28 2xl:w-36 h-28 xl:h-28 2xl:h-36 relative mb-5;
+    }
+
+    &--image {
+      @apply w-full h-full object-contain;
+    }
+
+    &--container {
+      @apply col-span-12 md:col-span-6 xl:col-span-3 p-5 xl:py-10 bg-[#171717] xl:bg-transparent xl:hover:bg-[#171717] rounded-xl;
+    }
+
+    &--title {
+      @apply text-2xl 2xl:text-3xl pb-4;
+    }
+
+    &--desc {
+      @apply text-white/70 pb-5 xl:text-base;
+    }
+
+    &--cta {
+      @apply text-brand-purple pb-1 border-b border-brand-purple font-semibold;
+    }
+  }
+}

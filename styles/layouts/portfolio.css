@@ -1,0 +1,55 @@
+.portfolio {
+  @apply py-8 container;
+
+  &__container {
+    @apply bg-light-primary text-dark-secondary rounded-2xl py-8 xl:py-24 px-5 lg:px-8 xl:px-10 2xl:px-12;
+  }
+
+  &__tag {
+    @apply py-2 px-4 mb-2.5 xl:mb-5 border border-dark-secondary w-max rounded-full xl:text-xl;
+  }
+
+  &__heading {
+    @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-5 md:mb-8 lg:mb-10;
+  }
+
+  &__card {
+    @apply mb-8 lg:mb-10 grid grid-cols-12 gap-y-8 lg:gap-x-8 xl:gap-x-10 2xl:gap-x-12 2xl:gap-y-16;
+
+    &--container {
+      @apply col-span-12 lg:col-span-6;
+    }
+
+    &--photo {
+      @apply w-full h-[20rem] sm:h-[32rem] lg:h-[24rem] xl:h-[32rem] 2xl:h-[40rem] relative rounded-md xl:rounded-2xl bg-dark-primary mb-3 xl:mb-5;
+    }
+
+    &--image {
+      @apply w-full h-full object-cover object-top rounded-md xl:rounded-t-xl px-2.5 pt-2.5 sm:px-3 sm:pt-3 xl:px-4 xl:pt-4 2xl:px-5 2xl:pt-5;
+    }
+
+    &--title {
+      @apply font-semibold text-xl xl:text-3xl mb-1 xl:mb-2.5;
+    }
+
+    &--desc {
+      @apply text-base xl:text-xl mb-4 text-[#0C0D0F]/70;
+    }
+
+    &--tag {
+      @apply flex items-center space-x-2.5;
+    }
+
+    &--tagline {
+      @apply py-1.5 xl:py-2 px-4 xl:px-4 border border-dark-primary rounded-full text-sm xl:text-base;
+    }
+  }
+
+  &__cta {
+    @apply w-full text-center;
+
+    &--button {
+      @apply px-8 xl:px-16 2xl:px-20 py-3 xl:py-6 bg-dark-primary text-white rounded-full lg:text-lg xl:text-2xl;
+    }
+  }
+}

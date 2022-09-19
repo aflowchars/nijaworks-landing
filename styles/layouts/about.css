@@ -1,0 +1,15 @@
+.about {
+  @apply container py-8 xl:py-12 xl:grid xl:grid-cols-12 xl:gap-x-5;
+
+  &__heading {
+    @apply text-3xl md:text-4xl pb-5 md:pb-8 xl:col-span-5 xl:text-5xl 2xl:text-6xl;
+  }
+
+  &__desc {
+    @apply text-white/70 text-lg lg:text-xl xl:text-2xl 2xl:text-3xl lg:leading-[2] xl:leading-[2.15] 2xl:leading-[2.25] xl:col-span-7;
+
+    &--brand {
+      @apply text-brand-purple;
+    }
+  }
+}

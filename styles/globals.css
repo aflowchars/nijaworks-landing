@@ -1,26 +1,15 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;800&display=swap");
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import "layouts/main.css";
+@import "layouts/hero.css";
+@import "layouts/client.css";
+@import "layouts/about.css";
+@import "layouts/service.css";
+@import "layouts/portfolio.css";
 
-* {
-  box-sizing: border-box;
-}
+@import "components/header.css";
+@import "components/footer.css";
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
